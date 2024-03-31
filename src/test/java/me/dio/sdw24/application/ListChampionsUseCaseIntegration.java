@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import me.dio.sdw24.domain.model.Champions;
+import me.dio.sdw24.domain.model.Champion;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class ListChampionsUseCaseIntegration {
 
     @Test
     public void testListChampions() {
-        List<Champions> Champions = listChampionsUseCase.findAll();
+        List<Champion> Champions = listChampionsUseCase.findAll();
 
         Assertions.assertEquals(12,Champions.size());
     }
